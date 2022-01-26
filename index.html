@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Montserrat:wght@700&family=Poppins:wght@100;200;300;400;600;700&family=Raleway:wght@100;400;500&family=The+Nautigal:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping</title>
+  </head>
+  <body>
+    <section class="whole" id="whole">
+      <div class="top">
+        <i class="fa fa-bars fa-lg"></i>
+        <i class="fa fa-shopping-cart fa-lg"></i>
+      </div>
+      <hr />
+      <img src="assets/photo.jpg" id="img1" />
+      <div class="text">
+        <h1>Everyday rinse and reload</h1>
+        <p>
+          Achieve your dream skin goal with this complete package of skincare
+          produts that will rejuvenate your day.
+        </p>
+        <div class="row">
+          <div class="star">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <div class="sValue">
+            <h4>4.5</h4>
+          </div>
+          <div class="link">
+            <a href="">
+              Click to read reviews &nbsp; <i class="fa fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="priceVal">
+          <h1>
+            ₹{{price}} &nbsp; <span class="strikethrough">₹{{dPrice}}</span>
+          </h1>
+        </div>
+      </div>
+      <div class="offerSelect">
+        <div class="offer" :class="boxAclass" @click="boxSelected('A')">
+          <div class="plan">
+            <div class="hText">
+              <h6>
+                <i class="fa fa-star"></i>MOST POPULAR<i class="fa fa-star"></i>
+              </h6>
+            </div>
+            <h3>1 Months Pack (4 tubes)</h3>
+            <h4>Savings: ₹200</h4>
+            <div class="save">
+              <p>38% Saved</p>
+              &nbsp;
+              <p id="bRes">Best Results</p>
+            </div>
+          </div>
+          <div class="planPrice">
+            <h2>₹595<br /><span class="strikethrough">₹795</span></h2>
+          </div>
+        </div>
+        <div class="tick" :class="tickAclass">
+          <i class="fa fa-check"></i>
+        </div>
+      </div>
+      <div class="offerSelect">
+        <div class="offer" :class="boxBclass" @click="boxSelected('B')">
+          <div class="plan">
+            <h3>3 Months Pack (12 tubes)</h3>
+            <h4>Savings: ₹100</h4>
+            <div class="save">
+              <p>12% Saved</p>
+            </div>
+          </div>
+          <div class="planPrice">
+            <h2>₹899<br /><span class="strikethrough">₹999</span></h2>
+          </div>
+        </div>
+        <div class="tick" :class="tickBclass">
+          <i class="fa fa-check"></i>
+        </div>
+      </div>
+      <button id="bottom">
+        <i class="fa fa-shopping-cart fa-lg"></i> Add to Cart
+      </button>
+    </section>
+  </body>
+</html>

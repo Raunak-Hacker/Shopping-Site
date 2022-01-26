@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.whole {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    background-color: rgba(8, 9, 12, 1);
+  }
+  .whole {
+    display: block;
+    width: 100%;
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .top .fa {
+    margin: 33px 28px;
+    color: #fff;
+  }
+  hr {
+    width: 85%;
+    margin: auto;
+  }
+  #img1 {
+    /* padding: 40px;
+    width: 80%; */
+    height: 407px;
+    width: 311px;
+    margin: 32px 33px;
+  }
+  .text {
+    margin: 20px 40px;
+  }
+  .text p {
+    margin-top: 10px;
+    color: rgba(196, 202, 207, 1);
+    font-family: Belgrano;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .row {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+  }
+  .star .fa {
+    text-align: center;
+    padding-top: -100px;
+    font-size: 10px;
+    align-items: center;
+    height: max-content;
+    color: rgb(255, 255, 255);
+  }
+  .star {
+    text-align: center;
+    padding: 0 8px;
+    background-color: rgb(30, 175, 30);
+    height: 1.5em;
+    width: fit-content;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  .sValue {
+    /* margin-top: 100px; */
+    margin-right: 10px;
+  }
+  .text h1 {
+    color: #fff;
+  }
+  .sValue h4 {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #fff;
+  }
+  .link a {
+    text-decoration: none;
+    color: rgba(66, 70, 72, 1);
+    font-family: DM Sans;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .priceVal {
+    margin-top: 36px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: left;
+  }
+  .priceVal s {
+    color: rgba(60, 70, 79, 1);
+  }
+  .offerSelect {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+  }
+  .offer {
+    background: rgba(33, 39, 44, 1);
+    /* height: 124px; */
+    width: 90%;
+    margin-left: 22px;
+    margin-top: 25px;
+    border-radius: 8px;
+    /* display: block; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  .offer .plan {
+    width: 95%;
+  }
+  .offer .planPrice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 10%;
+  }
+  .strikethrough {
+    text-decoration: line-through;
+    color: rgba(76, 96, 112, 1);
+    width: 100%;
+  }
+  .sel {
+    background: #374b5b;
+    /* height: 94px; */
+    border: 2px solid white;
+  }
+  .sel .strikethrough {
+    color: #28333d;
+  }
+
+  .tick {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 1.5em;
+    visibility: hidden;
+  }
+  .show {
+    visibility: visible;
+  }
+
+  .hText {
+    background: rgba(6, 123, 216, 1);
+    width: max-content;
+    border-radius: 10px;
+    padding: 0 10px;
+    display: inline-block;
+    margin-left: 18px;
+    margin-top: 12px;
+  }
+  .hText h6 {
+    font-family: Poppins;
+    font-size: 6px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .offer h3 {
+    margin-left: 17px;
+    margin-top: 7px;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+  }
+  .offer h4 {
+    margin-top: 2px;
+    margin-left: 17px;
+    font-family: Belgrano;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(70, 93, 104, 1);
+  }
+  .sel .plan h4 {
+    color: #28333d;
+  }
+  .offer p {
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .save {
+    display: flex;
+  }
+  .save p {
+    margin-left: 17px;
+    margin-top: 7px;
+    color: rgba(36, 219, 109, 1);
+  }
+  #bRes {
+    color: rgba(219, 157, 36, 1);
+  }
+  .planPrice {
+    padding: 0;
+    margin-right: 17px;
+    margin-top: 55px;
+  }
+  .planPrice h2 {
+    color: white;
+    font-family: DM Serif Display;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: right;
+  }
+  #bottom {
+    border: none;
+    width: 85%;
+    margin: 22px;
+    margin-top: 40px;
+    padding: 10px;
+    background: rgb(50, 79, 102);
+    color: white;
+  }
+}
